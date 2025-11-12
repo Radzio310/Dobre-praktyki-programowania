@@ -24,8 +24,8 @@ def test_secure_ping_ok(client: TestClient):
     assert r2.status_code == 200
     assert r2.json()["ok"] is True
 
-def test_login_bad_credentials(client: TestClient, username, password):
-    r = client.post("/jwt/login_form", data={"username": username, "password": password})
+def test_login_bad_credentials(client: TestClient):
+    r = client.post("/jwt/login_form", data={"username": "Janek", "password": "Błędny"})
     assert r.status_code == 401
 
 def test_login_missing_fields(client: TestClient):
