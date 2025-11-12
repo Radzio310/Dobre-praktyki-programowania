@@ -29,3 +29,8 @@ def test_user_can_login_and_get_user_details(client: TestClient, admin_auth: dic
     body = r2.json()
     assert body["sub"]  # id użytkownika
     assert "ROLE_USER" in body["roles"]
+
+
+def test_user_details_requires_token(client: TestClient):
+    r = client.get("/user_details")  # brak Authorization
+    assert r.status_code in (401, 403)
