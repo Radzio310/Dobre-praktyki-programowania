@@ -1,0 +1,4 @@
+username,password,roles
+admin,admin,ROLE_ADMIN
+user1,test,ROLE_USER
+editor,edpass,ROLE_USER,ROLE_EDITOR
