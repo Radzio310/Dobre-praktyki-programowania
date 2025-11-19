@@ -1,13 +1,23 @@
 # tests/test_users.py
 from fastapi.testclient import TestClient
+import uuid
 
 def test_create_user_admin_only(client: TestClient, admin_auth: dict):
-    payload = {"username": "alice", "password": "secret", "roles": ["ROLE_USER"]}
+    # generujemy unikalny login, żeby nie kolidował z seedem / innymi testami
+    username = f"alice_{uuid.uuid4().hex[:8]}"
+
+    payload = {
+        "username": username,
+        "password": "secret",
+        "roles": ["ROLE_USER"],
+    }
+
     r = client.post("/users", json=payload, headers=admin_auth)
     assert r.status_code == 201, r.text
+
     data = r.json()
     assert data["id"] > 0
-    assert data["username"] == "alice"
+    assert data["username"] == username
     assert data["roles"] == ["ROLE_USER"]
 
 def test_create_user_forbidden_without_admin(client: TestClient):
