@@ -11,6 +11,7 @@ from .links import router as links_router
 from .ratings import router as ratings_router
 from .tags import router as tags_router
 from .users import router as users_router
+from image_api.image_queue_api import router as image_queue_router
 
 from jwt.router import router as jwt_router
 from jwt.deps import get_current_user, require_roles
@@ -58,6 +59,7 @@ app.include_router(movies_router, dependencies=[auth_dep])
 app.include_router(links_router, dependencies=[auth_dep])
 app.include_router(ratings_router, dependencies=[auth_dep])
 app.include_router(tags_router, dependencies=[auth_dep])
+app.include_router(image_queue_router)
 
 # router użytkowników (ma własne zależności per-endpoint)
 app.include_router(users_router)
