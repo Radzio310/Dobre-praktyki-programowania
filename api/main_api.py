@@ -11,7 +11,7 @@ from .links import router as links_router
 from .ratings import router as ratings_router
 from .tags import router as tags_router
 from .users import router as users_router
-from image_api.image_queue_api import router as image_queue_router
+from .image_api.image_queue_api import router as image_queue_router
 
 from jwt.router import router as jwt_router
 from jwt.deps import get_current_user, require_roles

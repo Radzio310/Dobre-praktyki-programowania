@@ -2,7 +2,7 @@
 import json
 import os
 from uuid import uuid4
-from typing import Optional, Dict
+from typing import Dict, Optional, TypedDict, Literal
 
 import pika
 from fastapi import APIRouter, HTTPException
@@ -16,9 +16,12 @@ QUEUE_NAME = "image_analyze_queue"
 
 router = APIRouter()
 
-# Prosta "pseudo-baza" w pamięci:
-# { job_id: {"status": "...", "people_count": int | None, "error": str | None} }
-JOB_RESULTS: Dict[str, Dict[str, Optional[str]]] = {}
+class JobResult(TypedDict):
+    status: Literal["queued", "processing", "done", "error"]
+    people_count: Optional[int]
+    error: Optional[str]
+
+JOB_RESULTS: Dict[str, JobResult] = {}
 
 
 class AnalyzeRequest(BaseModel):

@@ -28,7 +28,7 @@ def count_people_on_image(img: np.ndarray) -> int:
     """
     # resize dla przyspieszenia (opcjonalnie)
     height, width = img.shape[:2]
-    max_width = 800
+    max_width = 1600
     if width > max_width:
         scale = max_width / float(width)
         img = cv2.resize(img, (int(width * scale), int(height * scale)))

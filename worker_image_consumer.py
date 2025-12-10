@@ -1,13 +1,13 @@
 # worker_image_consumer.py
 import json
 import os
-from typing import Any, Dict
+from typing import Any, Dict, Optional
 
 import pika
 import requests
 from dotenv import load_dotenv
 
-from api.image_api.image_detection import count_people_from_url
+from api.image_api.image_detection import count_people_from_url  # patrz punkt 2
 
 load_dotenv()
 
@@ -16,7 +16,12 @@ API_URL = os.getenv("API_URL", "http://localhost:8000")
 QUEUE_NAME = "image_analyze_queue"
 
 
-def send_result_to_api(job_id: str, status: str, people_count: int | None = None, error: str | None = None):
+def send_result_to_api(
+    job_id: str,
+    status: str,
+    people_count: Optional[int] = None,
+    error: Optional[str] = None,
+):
     """
     Wysyła wynik analizy do API (na endpoint internal/analyze_result).
     """
