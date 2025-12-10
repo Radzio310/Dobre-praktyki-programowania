@@ -1,0 +1,100 @@
+job_id,status,description
+475c1dd5-64ab-4b56-b18a-11d750e6d49c,done,Rozmowa telefoniczna z klientem VIP
+fdfd92e7-3afd-4a7d-824e-07ee5a60ee90,done,Obsługa reklamacji dotyczącej faktury
+8b4a1545-0d3a-4d69-8c3f-0aa3eec0aa76,done,Przygotowanie oferty cenowej dla nowego klienta
+dfb6ec5e-b0c2-4cd0-a675-cafd776bd1e7,done,Wyjaśnienie różnicy w rozliczeniu usług
+e1e6b4fc-aa0b-4305-8b3b-2ca6a2009353,done,Aktualizacja danych kontaktowych klienta
+f607397e-2432-4d01-97bb-738abe6b3caa,done,Udzielenie informacji o statusie zamówienia
+bd64370a-3374-4a1b-afec-d50b8758924d,done,Pomoc w odzyskaniu hasła do panelu klienta
+d3df8ee5-9ef1-4346-b8b6-14338a9976e4,done,Przekazanie sprawy do działu technicznego
+18dd04b6-f093-4ef8-805b-5989ed38db6c,done,Weryfikacja poprawności danych na umowie
+e84ea865-1a83-4ca2-afb9-62dfe6f3ddac,in_progress,Zmiana pakietu usług na wyższy
+5397cd12-6ef9-4c17-bc04-a606b23fa707,in_progress,Zmiana pakietu usług na tańszy
+6b2bfc1a-fcdf-4d0c-bba2-179e23b0812a,in_progress,Anulowanie nieopłaconego zamówienia
+345e56eb-a75a-42a3-a613-339f6b27958a,done,Wyjaśnienie naliczenia opłaty serwisowej
+a079417e-f031-4f37-8ff0-9efea991215e,in_progress,Rejestracja nowego zgłoszenia serwisowego
+73f26fcb-1b28-4cc1-a884-688510152bce,done,Przekazanie klientowi wyników analizy zgłoszenia
+0a0e257d-1bd4-4b63-a112-d802ae7c851e,in_progress,Umówienie rozmowy z opiekunem handlowym
+ed949e71-4a62-4561-a608-c9cccff8aa1c,pending,Przedłużenie umowy na kolejny okres
+41d97ee5-9ecf-48e6-8782-3a8ce9b7df5e,pending,Rozmowa z niezadowolonym klientem
+f7161ee2-d918-4d5b-b9f3-ca08da77e6ae,pending,Przyjęcie pochwały od klienta i przekazanie dalej
+7c351ee9-96b8-4d65-a876-d864f5c64df7,pending,Zebranie opinii klienta po zakończonym projekcie
+8b483b3e-29bd-4577-bff3-79c5b462ae75,pending,Pomoc w konfiguracji aplikacji mobilnej
+4b9856e8-d550-46bf-9f13-1d098a236f9a,pending,Aktywacja nowej licencji oprogramowania
+f84917fd-73d6-48f1-adf0-41edfaf28b14,pending,Wyjaśnienie różnic między dwoma planami taryfowymi
+87e49bb1-9ac1-4f96-ab69-7dfa78f5a2ca,pending,Dopisanie uwag do karty klienta w CRM
+9073e151-588d-4088-9de7-a2987028d684,pending,Sprawdzenie poprawności numeru NIP
+93a85f3f-0228-4fb9-a0a7-cb2683cdef46,pending,Zmiana adresu korespondencyjnego klienta
+9e7222c0-b981-41a8-a596-e3c16eb6d430,pending,Aktywacja zgody marketingowej
+6271f9af-b37c-438c-8da0-b2f8ad94f247,pending,Wycofanie zgody marketingowej
+6c4bb14d-d6a2-4ca6-8126-4b55822f386e,pending,Udzielenie informacji o promocji sezonowej
+f270d411-4e2d-4836-83f4-4184abf8d06f,pending,Przekazanie instrukcji płatności przelewem
+48e29095-6436-4299-b4ed-2cdb429c7cbb,pending,Wysyłka duplikatu faktury e-mailem
+4d767578-6cb4-4fda-9302-fea72c7a3c6c,pending,Sprawdzenie statusu płatności w systemie
+b372d3a7-0b1e-4e7b-88c9-46dadbf8d0eb,pending,Ustalenie nowego terminu płatności
+0e431e7f-3ae7-4ed7-a0de-d91f443a9fb0,pending,Zgłoszenie zmiany właściciela konta
+a370c9df-a778-4de5-bebb-46ab4fdcb043,pending,Przyjęcie zgłoszenia o błędzie w systemie
+016c23b9-b005-4c0d-9b20-39fe4941f492,pending,Przekazanie zgłoszenia do drugiej linii wsparcia
+d59f2d44-df06-4af3-b7bd-ea70e3afd422,pending,Telefoniczne powiadomienie o planowanej przerwie technicznej
+4480ce5a-9a2a-406d-bdfc-401f5c8e595b,pending,Wyjaśnienie zasad działania programu lojalnościowego
+cf114a79-4f1b-40e2-8534-447e37347c08,pending,Poinformowanie o terminie wdrożenia nowej funkcji
+c0d19d0a-bd03-40a9-8230-b0faf4e7e394,pending,Pomoc w wyborze odpowiedniego pakietu usług
+db382bba-6d87-4c57-bdb3-937ee449b0db,pending,Zamknięcie starego zgłoszenia po potwierdzeniu klienta
+27729eb1-548f-47cf-9a92-652090ccce4f,pending,Przyjęcie zgłoszenia o podejrzeniu fraudu
+0260ab1d-5077-4517-ba3a-d0fb619ba03e,pending,Zweryfikowanie tożsamości klienta na podstawie pytań kontrolnych
+9dc1101c-835d-4b4c-90c6-20e08825fbd5,pending,Pomoc klientowi w zainstalowaniu aktualizacji
+21af2616-65df-4bd3-b531-86e2ced497f9,pending,Wyjaśnienie przyczyn opóźnienia w realizacji zamówienia
+1d314154-4433-4fb0-9080-c15d4c7de138,pending,Przekazanie informacji o czasie oczekiwania na serwis
+b7987350-a9a7-406e-a300-5e2b0e20a55a,pending,Przyjęcie zamówienia złożonego telefonicznie
+f24c2f31-1b66-4010-96d3-0efa9fdcbf7d,pending,Wysyłka podsumowania rozmowy na e-mail klienta
+3f42286a-e602-44bf-9ada-bdb0cf38a1ca,pending,Zmiana sposobu fakturowania na e-fakturę
+29e43e5a-8463-48a6-993c-0a0de761b477,pending,Przyjęcie rezygnacji z części usług
+bf637f0f-d82f-4cf5-bdc0-ffc76ba0f9de,pending,Aktywacja dodatkowej usługi bezpieczeństwa
+4c74e882-bc59-40e0-878c-d6d3001951f2,pending,Poinformowanie o zmianie regulaminu
+8e06cc0f-0e94-4d88-9127-f20bcbe6e2bf,pending,Sprawdzenie poprawności numeru rachunku bankowego
+e9d9b887-3b3b-4d7f-b65b-8c2ac0ef7ea4,pending,Wyjaśnienie zasad naliczania rabatów
+9f50b444-4b99-41f2-8b84-d984e884e79b,pending,Rejestracja nowego konta firmowego
+4fdb89b9-2bcb-4cfa-8a02-f82b6b44bbb0,pending,Pomoc w odzyskaniu dostępu do panelu administracyjnego
+835886f8-a3e8-44f9-a1d5-3b9ac1d42111,pending,Telefoniczne przypomnienie o kończącym się abonamencie
+7c2bd00a-8f33-4ded-94bf-38fd505d04ad,pending,Przekazanie rekomendacji dotyczącej optymalizacji kosztów
+876b2a5d-b865-4a0d-bcd6-613624ac0e65,pending,Zgłoszenie potrzeby szkolenia dla klienta
+3bd735dd-e9f5-4d5c-a60f-583794b8fe89,pending,Przyjęcie prośby o kontakt zwrotny
+567a4e58-8d76-4eab-9202-17a332768ed3,pending,Wyjaśnienie statusu przesyłki kurierskiej
+9a3f72ee-2c6c-4522-93ca-43cd689315e3,pending,Przekazanie informacji o wymaganych dokumentach
+0e93f2c1-421a-4d73-b197-0c80242605db,pending,Telefoniczne potwierdzenie terminu wdrożenia
+1f274b67-e667-4f45-96a7-67e55f11dc8f,pending,Obsługa zapytania w języku angielskim
+f658604b-9fc0-44d3-a37a-2f1a7ebb5805,pending,Wyjaśnienie zasad bezpieczeństwa danych osobowych
+1cd3057f-8c7c-4a17-8e45-f68a99c4632c,pending,Pomoc w aktywacji konta po rejestracji
+b19a35f1-6d63-48a9-8e86-7d263bb0c194,pending,Zgłoszenie problemu z logowaniem dwuskładnikowym
+04a67f0b-51b7-4a40-bc5d-f88d1b7a18b6,pending,Przekazanie informacji o godzinach pracy infolinii
+dfc5d4ea-1a67-4bd7-9b80-bbf95722974b,pending,Przyjęcie zgłoszenia o niedziałającej usłudze
+b089f26a-240c-4dd9-9154-9aceda1d9cfa,pending,Telefoniczne potwierdzenie danych do faktury
+91e12fcb-3bef-4647-bbed-9cb0422e069a,pending,Udzielenie informacji o historii zamówień
+558c4260-4a5b-4a62-82ce-7745db2d3b96,pending,Przekierowanie połączenia do działu windykacji
+612447e3-fabf-470a-8aa5-fc3ca9400f3a,pending,Wyjaśnienie zasad rozwiązania umowy
+fed5f66e-908b-4f52-b12a-529e086ad4d9,pending,Przyjęcie zgłoszenia o zmianie konfiguracji systemu
+46e5a96e-ca5e-4c23-b3a9-190ade84b558,pending,Sprawdzenie statusu zgłoszenia w systemie ticketowym
+cfd03f62-bce3-4f21-b748-3eb248a0fde2,pending,Wsparcie klienta przy pierwszym logowaniu
+0de1b86a-2a57-49f3-bd0c-f13b0145acfa,pending,Przekazanie instrukcji do samodzielnej konfiguracji
+e0c4ba7a-e91a-4bc3-a057-243900df5484,pending,Przyjęcie zgłoszenia o błędnym działaniu aplikacji mobilnej
+b80305df-3b18-4fd2-b5db-04c3cf09d1d0,pending,Wyjaśnienie różnic między wersją demo a pełną
+71131d2d-2ef6-48b1-a2da-5e9febafc62f,pending,Ustalanie terminu prezentacji online
+0db693a0-8e3d-4a20-a5dd-58c327d10457,pending,Telefoniczne podsumowanie oferty po wysłaniu e-mailem
+8554a9ef-5605-47df-ad4a-511d30b30e2c,pending,Pomoc w poprawnym wypełnieniu formularza online
+b78b16c0-9a72-4367-b2e4-60ba04c90e64,pending,Wyjaśnienie zasad zwrotu środków
+9da8d2d8-73dd-46c2-88b2-9dd92dfbc89a,pending,Przekazanie informacji o statusie zwrotu
+1dbd0e18-b6ea-4eb0-b51b-a82cbda57958,pending,Telefoniczne przypomnienie o podpisaniu umowy
+272777ef-81f9-44b9-b290-f5370e2c0ca7,pending,Wyjaśnienie kolejnych kroków procesu wdrożenia
+9b65c3ae-522a-4c3b-b0ed-2641bf818f12,pending,Przekazanie sugestii klienta do działu rozwoju produktu
+42ba3891-adf3-4e31-9d21-5e8175957038,pending,Potwierdzenie przyjęcia zgłoszenia serwisowego
+5f931280-22e6-4cb3-b260-e2dd7ba7b97c,pending,Końcowe podsumowanie projektu z klientem
+d7a8a22f-3c4b-4cda-a21d-0e7f3913e136,pending,Telefoniczne badanie satysfakcji klienta
+8c37614c-5b3c-4b02-816f-ec67aa9101a1,pending,Pomoc w przeniesieniu usług na nową lokalizację
+02b6dce2-8730-4d79-9ab4-78198145f9bd,pending,Wyjaśnienie różnic między cennikiem netto a brutto
+872bbe01-2186-4f99-b4c6-4d1351dc3faf,pending,Przekazanie informacji o dostępności konsultanta
+c88cec22-8e44-4f53-8efb-681562bfe352,pending,Przyjęcie zgłoszenia o problemie z płatnością kartą
+9e7b6336-ab64-487f-b59b-c7c5075f1158,pending,Wyjaśnienie zasad rozliczenia w walucie obcej
+4cda5f8c-b3a1-4d19-8d18-947429de4080,pending,Telefoniczne poinformowanie o zakończeniu sprawy
+3a83bf58-339e-49b9-9b9d-fcb51a4a9fa0,pending,Przyjęcie zgłoszenia awarii krytycznej
+6b4ba15d-0521-4d54-9c30-59d81157f9c0,pending,Przekazanie informacji o eskalacji sprawy
+abeebcce-b5b1-4871-92a2-262571aea72b,pending,Pomoc w konfiguracji powiadomień e-mail
