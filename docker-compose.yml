@@ -3,10 +3,71 @@ version: "3.8"
 services:
   rabbitmq:
     image: rabbitmq:3-management
-    container_name: rabbitmq
     ports:
-      - "5672:5672"    # port dla aplikacji (pika)
-      - "15672:15672"  # panel web http://localhost:15672  (login: guest / hasło: guest)
+      - "5672:5672"
+      - "15672:15672"
     environment:
       RABBITMQ_DEFAULT_USER: guest
       RABBITMQ_DEFAULT_PASS: guest
+    healthcheck:
+      test: ["CMD", "rabbitmq-diagnostics", "-q", "ping"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+
+  service-a:
+    build: ./service_a
+    container_name: service-a
+    environment:
+      - PORT=8001
+      - DATABASE_URL=sqlite:////data/service_a.db
+    ports:
+      - "8001:8001"
+    volumes:
+      - service_a_data:/data
+    depends_on:
+      rabbitmq:
+        condition: service_healthy
+
+  service-b:
+    build: ./service_b
+    container_name: service-b
+    environment:
+      - PORT=8002
+      - RABBITMQ_URL=amqp://guest:guest@rabbitmq:5672/
+      - ANALYZE_QUEUE=image_analyze_queue
+    ports:
+      - "8002:8002"
+    depends_on:
+      rabbitmq:
+        condition: service_healthy
+
+  analyze-worker:
+    build: ./workers
+    command: python analyze_worker.py
+    environment:
+      - RABBITMQ_URL=amqp://guest:guest@rabbitmq:5672/
+      - ANALYZE_QUEUE=image_analyze_queue
+      - RESULTS_QUEUE=image_results_queue
+    depends_on:
+      rabbitmq:
+        condition: service_healthy
+    restart: unless-stopped
+
+  result-dispatcher:
+    build: ./workers
+    container_name: result-dispatcher
+    command: python result_dispatcher.py
+    environment:
+      - RABBITMQ_URL=amqp://guest:guest@rabbitmq:5672/
+      - RESULTS_QUEUE=image_results_queue
+      - SERVICE_A_URL=http://service-a:8001
+    depends_on:
+      rabbitmq:
+        condition: service_healthy
+      service-a:
+        condition: service_started
+    restart: unless-stopped
+
+volumes:
+  service_a_data:
